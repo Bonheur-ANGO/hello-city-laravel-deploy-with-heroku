@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('base')
 
-        <title>About US | Hello City</title>
+@section('title')
+Hello City
+@endsection
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+@section('content')
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body>
-            <h1>Hello from Quebec</h1>
+<h1>Hello from Quebec</h1>
 
-            <p>It's currently {{date('h:i A') }} </p>
+<p>It's currently {{date('h:i A') }} </p>
 
-
-            <footer>
-                <p>&copy; Copyrights {{ date('Y') }} &middot; <a href="/about-us">About US</a> </p>
-            </footer>
-    </body>
-</html>
+@endsection

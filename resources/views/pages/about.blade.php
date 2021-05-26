@@ -1,5 +1,9 @@
 @extends('base')
 
+@section('title')
+About US | Hello City
+@endsection
+
 @section('content')
 
 <p>Built with &hearts; by Bonheur ANGO</p>
