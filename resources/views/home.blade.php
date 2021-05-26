@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello City</title>
+        <title>About US | Hello City</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
 
             <footer>
-                <p>&copy; Copyrights {{ date('Y') }} &middot; <a href="#">About US</a> </p>
+                <p>&copy; Copyrights {{ date('Y') }} &middot; <a href="/about-us">About US</a> </p>
             </footer>
     </body>
 </html>
