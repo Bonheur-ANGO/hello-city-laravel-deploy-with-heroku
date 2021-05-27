@@ -22,7 +22,12 @@
 
 
     <footer>
-        <p>&copy; Copyrights {{ date('Y') }} &middot; <a href="{{ route('about') }}">About US</a> </p>
+        <p>
+        &copy; Copyrights {{ date('Y') }} 
+        @if(!Route::is('about'))
+        &middot; <a href="{{ route('about') }}">About US</a> 
+        @endif
+        </p>
     </footer>
 </body>
 
