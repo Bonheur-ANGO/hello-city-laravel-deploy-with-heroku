@@ -8,7 +8,7 @@
     <title>@yield('title', config('app.name'))</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <style>
         body {
@@ -17,16 +17,18 @@
     </style>
 </head>
 
-<body>
-    @yield('content')
+<body class="py-6 flex flex-col justify-between min-h-screen items-center">
+    <main role="main" class="flex flex-col justify-center items-center">
+        @yield('content')
+    </main>
 
 
     <footer>
-        <p>
-        &copy; Copyrights {{ date('Y') }} 
-        @if(!Route::is('about'))
-        &middot; <a href="{{ route('about') }}">About US</a> 
-        @endif
+        <p class="text-gray-400">
+            &copy; Copyrights {{ date('Y') }}
+            @if(!Route::is('about'))
+            &middot; <a href="{{ route('about') }}" class="text-indigo-500 hover:text-indigo-600">About US</a>
+            @endif
         </p>
     </footer>
 </body>
