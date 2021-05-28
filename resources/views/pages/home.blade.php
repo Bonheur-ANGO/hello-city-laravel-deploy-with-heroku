@@ -1,4 +1,4 @@
-@extends('layouts.base', ['title' => config('app.name') ])
+@extends('layouts.base')
 
 
 @section('content')
