@@ -1,6 +1,5 @@
-@extends('base')
+@extends('layouts.base', ['title' => 'About Us | ' . config('app.name')])
 
-@section('title', 'About US | ' . config('app.name'))
 
 @section('content')
 
@@ -9,8 +8,8 @@
 <h2 class="mb-5 text-gray-700">
     Built with <span class="text-pink-500">&hearts;</span> by Bonheur ANGO
 </h2>
-<p> 
-<a href="{{ route('home')  }}" class="text-indigo-500 hover:text-indigo-600">Revenir à la page d'accueil</a> 
+<p>
+    <a href="{{ route('home')  }}" class="text-indigo-500 hover:text-indigo-600">Revenir à la page d'accueil</a>
 </p>
 
 @endsection
